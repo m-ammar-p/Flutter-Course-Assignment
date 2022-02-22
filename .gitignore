@@ -1,0 +1,8 @@
+.idea
+.dart_tool
+.package
+i_am_ruch.iml
+pubspec.lock
+build
+gen
+.DS_Store
