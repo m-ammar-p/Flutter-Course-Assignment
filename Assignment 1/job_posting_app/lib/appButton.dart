@@ -13,8 +13,8 @@ class AppButton extends StatelessWidget {
         Expanded(
           child: Container(
             alignment: Alignment.center,
-            margin: const EdgeInsets.only(right: 27,), // 590
-            padding: const EdgeInsets.all(15),
+            margin: const EdgeInsets.only(right: 27,bottom: 59), // 590
+            padding: const EdgeInsets.all(25),
             decoration: BoxDecoration(
               color: Colors.white,
               border: Border.all(color: const Color(0xFF5D5D67), width:1),

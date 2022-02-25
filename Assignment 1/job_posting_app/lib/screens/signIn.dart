@@ -21,7 +21,7 @@ class SignIn extends StatelessWidget {
               style: TextStyle(color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 14),
-            const Text("Welcome \nJoin the community!",
+            const Text("Welcome back\nyou've been missed !",
               style: TextStyle(color: Colors.white, fontSize: 35),
             ),
             SizedBox(height: 47),
@@ -50,7 +50,7 @@ class SignIn extends StatelessWidget {
             ),
 
             SizedBox(height: 11),
-            AppButton(label: "Sign Up", onPress: SignUpPress)
+            AppButton(label: "Sign In", onPress: SignUpPress)
 
 
           ], // children
