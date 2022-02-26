@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:job_posting_app/screens/jobListing.dart';
 import 'package:job_posting_app/screens/signUp.dart';
-import '../appButton.dart';
-import '../appTextField.dart';
+import '../components/appButton.dart';
+import '../components/appTextField.dart';
 
 class SignIn extends StatelessWidget {
 
@@ -50,8 +51,11 @@ class SignIn extends StatelessWidget {
             ),
 
             SizedBox(height: 11),
-            AppButton(label: "Sign In", onPress: SignUpPress)
-
+            AppButton(label: "Sign In", onPress: (){
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => JobListing())
+              );
+            }),
 
           ], // children
         ),
@@ -59,7 +63,12 @@ class SignIn extends StatelessWidget {
     );
   } // build
 
-  void SignUpPress(){
 
-  } // End of SignUpPress
+  //  void SignInPress(){
+  //     print("hi");
+  //     Navigator.of(context).push(
+  //         MaterialPageRoute(builder: (_) => SignUp())
+  //     );
+  // } // End of SignUpPress
+
 } // end of SignIn Class

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:job_posting_app/screens/signIn.dart';
-import '../appButton.dart';
-import '../appTextField.dart';
+import '../components/appButton.dart';
+import '../components/appTextField.dart';
 
 class SignUp extends StatelessWidget {
 
