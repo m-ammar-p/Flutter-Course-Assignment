@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job_posting_app/screens/jobListing.dart';
-import 'package:job_posting_app/screens/signUp.dart';
+
 
 void main() {
   runApp(const MyApp());

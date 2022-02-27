@@ -24,12 +24,12 @@ class SignUp extends StatelessWidget {
             const Text("Welcome \nJoin the community!",
               style: TextStyle(color: Colors.white, fontSize: 35),
             ),
-            SizedBox(height: 47),
-            AppTextField(placeholder: "Enter your full name"),
-            AppTextField(placeholder: "Enter your email address"),
-            AppTextField(placeholder: "Enter your password"),
+            const SizedBox(height: 47),
+            const AppTextField(placeholder: "Enter your full name"),
+            const AppTextField(placeholder: "Enter your email address"),
+            const AppTextField(placeholder: "Enter your password"),
 
-            Spacer(),
+            const Spacer(),
             
             GestureDetector(
               onTap: () {
@@ -39,7 +39,7 @@ class SignUp extends StatelessWidget {
               }, // onTap
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text("Already have an account ? ",
                     style: TextStyle(color: Color(0xFF8F8F9E), fontSize: 15),
                   ),
@@ -50,9 +50,8 @@ class SignUp extends StatelessWidget {
               ),
             ),
 
-            SizedBox(height: 11),
+            const SizedBox(height: 11),
             AppButton(label: "Sign Up", onPress: SignUpPress)
-
 
           ], // children
         ),
