@@ -29,7 +29,7 @@ class SignIn extends StatelessWidget {
             ),
             const SizedBox(height: 47),
             const AppTextField(placeholder: "Enter your email address"),
-            const AppTextField(placeholder: "Enter your password"),
+            const AppTextField(placeholder: "Enter your password", obscureText: true),
             const Spacer(),
             GestureDetector(
               onTap: () {
@@ -63,11 +63,7 @@ class SignIn extends StatelessWidget {
     );
   } // build
 
-//  void SignInPress(){
-//     print("hi");
-//     Navigator.of(context).push(
-//         MaterialPageRoute(builder: (_) => SignUp())
-//     );
-// } // End of SignUpPress
+ void SignInPress(){
+ } // End of SignUpPress
 
 } // end of SignIn Class

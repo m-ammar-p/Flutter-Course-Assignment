@@ -3,8 +3,12 @@ import 'package:flutter/material.dart';
 class AppTextField extends StatelessWidget {
   final String placeholder;
   final String txt;
+  final bool obscureText;
 
-  const AppTextField({Key? key, required this.placeholder, this.txt = ''})
+  const AppTextField({Key? key, required this.placeholder,
+    this.txt = '',
+    this.obscureText = false,
+  })
       : super(key: key);
 
   @override
@@ -19,13 +23,11 @@ class AppTextField extends StatelessWidget {
       ),
       child: TextField(
         controller: TextEditingController()..text = txt,
+        obscureText: obscureText,
         style: const TextStyle(color: Colors.white, fontSize: 15),
         decoration: InputDecoration(
           hintText: placeholder,
-          labelStyle: const TextStyle(color: Colors.white, fontSize: 15),
-          hintStyle: const TextStyle(
-            color: Color(0xFF8F8F9E),
-            fontSize: 15,
+          hintStyle: const TextStyle(color: Color(0xFF8F8F9E), fontSize: 15,
           ),
           border: InputBorder.none,
         ),
