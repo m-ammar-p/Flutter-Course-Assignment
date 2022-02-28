@@ -6,3 +6,5 @@ pubspec.lock
 build
 gen
 .DS_Store
+Podfile
+Podfile.lock

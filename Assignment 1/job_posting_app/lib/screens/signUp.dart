@@ -61,7 +61,7 @@ class SignUp extends StatelessWidget {
             ),
             const SizedBox(height: 11),
             AppButton(
-                label: "Sign In",
+                label: "Sign Up",
                 onPress: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (_) => JobListing()));
