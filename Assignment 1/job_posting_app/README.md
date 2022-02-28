@@ -1,16 +1,18 @@
 # job_posting_app
 
-Flutter project that post jobs
+Job Posting App UI Design
 
-## Getting Started
+## UI
 
-This project is a starting point for a Flutter application.
+<p float="left">
+<img src="https://user-images.githubusercontent.com/26081828/156007589-95affbb8-31d9-47cd-b018-a6ea915da86e.png" alt="SignUp Screen" height= "350" width = "180"/>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://user-images.githubusercontent.com/26081828/156008580-295eedcb-b207-4f1d-b5d1-7f8aae7a4dd8.png" alt="SignIn Screen" height= "350" width = "180"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="https://user-images.githubusercontent.com/26081828/156008923-3ba132c6-6baa-43d7-ac49-84936b4a6fbb.png" alt="Jobs Scren" height= "350" width = "180">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/26081828/156009119-740796ad-3750-4fa2-b140-3efbdb23ea85.png" alt="Add Job Screen" height= "350" width = "180">
+
+<img src="https://user-images.githubusercontent.com/26081828/156009188-16e7d88c-9484-4959-a0ca-7c465113b49b.png" alt="Update Job Screen" height= "350" width = "180">
+
+<p/>
