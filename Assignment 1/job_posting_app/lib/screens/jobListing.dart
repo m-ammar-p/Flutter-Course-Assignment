@@ -1,25 +1,22 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:job_posting_app/components/jobListingCard.dart';
-import 'package:job_posting_app/components/searchTextField.dart';
 import 'package:job_posting_app/screens/signIn.dart';
+import '../widgets/jobListingCard.dart';
+import '../widgets/searchTextField.dart';
+import 'adPosting.dart';
 
 class JobListing extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFF191720),
-
       floatingActionButton: SizedBox(
         height: 74,
         width: 74,
         child: FloatingActionButton(
           backgroundColor: Colors.white,
           onPressed: () {
-            // Navigator.of(context).push(
-            //     MaterialPageRoute(builder: (_) => AddPosting())
-            // );
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (_) => AdPosting()));
           },
           child: const Icon(
             Icons.add,
@@ -28,9 +25,8 @@ class JobListing extends StatelessWidget {
           ),
         ),
       ),
-
       body: Padding(
-        padding: const EdgeInsets.only(top: 79, left: 27,right: 27),
+        padding: const EdgeInsets.only(top: 79, left: 27, right: 27),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -48,26 +44,29 @@ class JobListing extends StatelessWidget {
 
                 GestureDetector(
                   onTap: () {
-                    Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => SignIn())
-                    );
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (_) => SignIn()));
                   }, // onTap
-                  child: const Icon(Icons.arrow_back_sharp, color: Colors.white,),
+                  child: const Icon(
+                    Icons.arrow_back_sharp,
+                    color: Colors.white,
+                  ),
                 ),
                 //Icon(Icons.arrow_back_sharp, color: Colors.white,),
               ],
             ),
             const Text(
-              "Ishaq Hassan",
+              "Muhammad Ammar",
               style: TextStyle(
-                color: Colors.white, fontSize: 25, fontWeight: FontWeight.normal,
+                color: Colors.white,
+                fontSize: 25,
+                fontWeight: FontWeight.normal,
               ),
             ),
             const SearchTextField(placeholder: "Search keywords"),
-
             const SizedBox(height: 10),
-
-            Expanded(child:ListView(
+            Expanded(
+              child: ListView(
                 children: <Widget>[
                   JobListingCard(),
                   JobListingCard(),
@@ -76,7 +75,9 @@ class JobListing extends StatelessWidget {
                   JobListingCard(),
                   JobListingCard(),
                   JobListingCard(),
-                  const SizedBox(height: 100,)
+                  const SizedBox(
+                    height: 100,
+                  )
                 ],
               ),
             ),

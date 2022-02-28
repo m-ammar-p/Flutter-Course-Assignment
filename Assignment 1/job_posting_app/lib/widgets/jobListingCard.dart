@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:job_posting_app/screens/updateJob.dart';
 
 class JobListingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin:  EdgeInsets.only(top: 10),
+      margin: const EdgeInsets.only(top: 10),
       height: 102,
       padding: const EdgeInsets.only(top: 20, left: 25, right: 25),
       decoration: BoxDecoration(
         color: const Color(0xFF201E27),
         borderRadius: BorderRadius.circular(10.0),
-        boxShadow:  [
+        boxShadow: [
           BoxShadow(
             color: Colors.red.withOpacity(0.5),
             blurRadius: 4,
-            offset: Offset(1, 4), // Shadow position
+            offset: const Offset(1, 4), // Shadow position
           ),
         ],
       ),
@@ -23,7 +24,7 @@ class JobListingCard extends StatelessWidget {
           Row(
             children: [
               Container(
-                padding: EdgeInsets.only(top: 10),
+                padding: const EdgeInsets.only(top: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: const [
@@ -45,16 +46,25 @@ class JobListingCard extends StatelessWidget {
                   ],
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               Row(
-                children: const [
-                  Icon(
-                    Icons.edit_outlined,
-                    color: Colors.white,
-                    size: 25,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => UpdateJob()),
+                      );
+                    },
+                    child: const Icon(
+                      Icons.edit_outlined,
+                      color: Colors.white,
+                      size: 25,
+                    ),
                   ),
-                  SizedBox(width: 25,),
-                  Icon(
+                  const SizedBox(
+                    width: 25,
+                  ),
+                  const Icon(
                     Icons.delete_forever_outlined,
                     color: Colors.red,
                     size: 25,
