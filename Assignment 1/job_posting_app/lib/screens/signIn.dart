@@ -29,7 +29,7 @@ class SignIn extends StatelessWidget {
             ),
             const SizedBox(height: 47),
             const AppTextField(placeholder: "Enter your email address"),
-            const AppTextField(placeholder: "Enter your password", obscureText: true),
+            const AppTextField(placeholder: "Enter your password", isPassFiled: true),
             const Spacer(),
             GestureDetector(
               onTap: () {
