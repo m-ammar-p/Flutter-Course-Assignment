@@ -35,7 +35,7 @@ class SignUp extends StatelessWidget {
                     children: const [
                       AppTextField(placeholder: "Enter your full name"),
                       AppTextField(placeholder: "Enter your email address"),
-                      AppTextField(placeholder: "Enter your password", obscureText: true),
+                      AppTextField(placeholder: "Enter your password", isPassFiled: true),
                     ],
                   ),
                 )),
